@@ -1,0 +1,84 @@
+<div class="p-4" style="min-height: 800px;">         
+    <h4 class="text-primary mb-4">Quản lý người dùng</h4>
+    
+        <form>
+
+            <input type="hidden" class="form-control" ng-model="data.id">
+
+            <div class="mb-3">
+                <label class="form-label">Tên sản phẩm</label>
+                <input type="text" class="form-control" ng-model="data.name" ng-keyup="validatename()">
+                <span ng-show="validate.name" class="text-danger" >Không để trống</span>
+                
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Giá</label>
+                <input type="text" class="form-control" ng-model="data.gia" ng-keyup="validategia()" >
+                <span ng-show="validate.gia" class="text-danger" >Không để trống</span>
+        
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mô tả</label>
+                <input type="text" class="form-control" ng-model="data.moTa" ng-keyup="validatemoTa()" >
+                <span ng-show="validate.moTa" class="text-danger" >Không để trống</span>
+            </div>
+            
+        </form>
+    
+    <button class="btn btn-info" ng-click="save()">Thêm mới</button>
+<br>
+<br>
+<div class="row">
+    <div class="col-6">
+    <h6>Search Name</h6>
+             <form  style="width: 18rem;">
+                 <div class="mt-2">
+                     <input type="text" class="form-control" placeholder="Search Name" ng-model="name">
+                 </div>
+             </form>
+         <form>
+         </div>
+         <div class="col-6">
+            <h6>Search Giá</h6>
+            <form  style="width: 18rem;">
+            <div>
+                <input type="number"  placeholder="Min giá" ng-model="minGia">
+                <input type="number"  placeholder="Max giá" ng-model="maxGia">
+            </div>
+        </form>
+        <br>
+         </div>
+        </div>
+         <br>
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th scope="col"  ng-click="sortColumn('id')">Id</th>
+                <th scope="col" ng-click="sortColumn('name')">Tên sản phẩm</th>
+                <th scope="col" ng-click="sortColumn('gia')">Giá</th>
+                <th scope="col" ng-click="sortColumn('moTa')">Mô tả</th>
+                <th scope="col">Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat=" (key ,value)  in lstSanPham
+            | orderBy:columnName:revert
+            | filter:{
+                name: name,
+                }
+            | aboutGia:minGia:maxGia
+            
+            ">
+                <td>{{value.id}}</td>
+                <td>{{value.name}}</td>
+                <td>{{value.gia}}</td>
+                <td>{{value.moTa}}</td>
+                <td>
+                    <button class="btn btn-success" ng-click="update(value)">Sửa</button>
+                    <button class="btn btn-danger" ng-click="delete(value.id)">Xoá</button>
+                </td>
+            </tr>
+           
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My shoes user</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/custom/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body ng-app="asm1">
+    <nav class="container" style="color: darkgrey; height: 20px; ">
+       <a href="#!gioithieu" style="text-decoration: none; color:#000; font-family:'Times New Roman'; font-size: 12px;">Giới thiệu về My Shoes</a>    
+        <a href="#!lienhe" style="margin-left: 15px;text-decoration: none; color: #000; font-family:Cambria; font-size: 12px;">Liên hệ</a>
+        <a href="" style="margin-left: 15px; text-decoration: none; color: #000;font-family:Cambria; font-size: 12px;">Blog</a>
+   
+    </nav>
+    <nav class="navbar navbar-light mt-1" style="background-color:dodgerblue; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 d-flex align-items-center">
+                    <a href="#!/trangchu" style="margin-right: 90px;">  
+                        <img src="img/LOGO.png" alt="" width="120" height="100">
+                    </a>
+                    <form style="width: 700px;">
+                        <div class="mt-2 position-relative">
+                            <input type="password" class="form-control" placeholder="Tìm kiếm sản phẩm....">
+                            <a class="btn btn-outline-light position-absolute" style="top: 0; right: 0; border-color: gainsboro; background-color: dodgerblue; width: 60px;">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="col-lg-6 col-md-6 d-flex justify-content-end align-items-center ">
+                    <div class="d-flex align-items-center" style="margin-right: 10px;">
+                        <div class="d-flex">
+                            <a href="https://www.facebook.com/vanhiep1102" target="_blank" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Theo dõi trên Facebook">
+                                <i class="fa-brands fa-facebook" style="font-size: 20px; color: white;"></i>
+                            </a>
+                            <a href="https://www.instagram.com/iq_hieppp_?igsh=MWp2bjBlNDEwOWhmZQ%3D%3D&utm_source=qr" target="_blank" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Theo dõi trên Instagram">
+                                <i class="fa-brands fa-instagram" style="font-size: 20px; color: white;"></i>
+                            </a>
+                            <a href="https://www.facebook.com/vanhiep1102" target="_blank" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Theo dõi trên Tiktok">
+                                <i class="fa-brands fa-tiktok" style="font-size: 20px; color: white;"></i>
+                            </a>
+                            <a href="mailto:vanhiep1808@gmail.com" target="_blank" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Gửi email cho chúng tôi">
+                                <i class="fa-solid fa-envelope" style="font-size: 20px; color: white;"></i>
+                            </a>
+                        </div>
+                        <div class="mt-4" style="display: flex; ">
+                            <div>
+                                <a href="" style="font-size: 20px; color: white; text-decoration: none; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">0396.435.000</a>
+                               <br>
+                                <a href="" style="font-size: 13px; color: white;text-decoration: none;">Gọi để mua hàng 24/7</a>
+                            </div>
+                            <a class="nav-link" style="color: rgb(8, 8, 8); padding: 5px; max-width: 100px; display: inline-block; text-align: center; margin-left: 10px;" href="#!/giohang"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Giỏ hàng của bạn">
+                                <i class="fa-solid fa-cart-shopping" style="font-size: 24px; color: white; border: 3px solid rgb(255, 255, 255); padding: 5px; border-radius: 5px;"></i>
+                            </a>
+                            <a class="nav-link" style="color: rgb(8, 8, 8); padding: 5px; max-width: 100px; display: inline-block; text-align: center; margin-left: 10px;" href="#!/login"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Đăng ký/ Đăng nhập">
+                                <i class="fa-regular fa-circle-user" style="font-size: 24px; color: white; padding: 5px; border-radius: 5px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <br>
+    <div ng-view style="background-color: lightcyan;"></div>
+    
+
+  
+      
+    <div ng-include="'layouts_user/_footer.html'"></div>
+    <br>
+
+    <!-- Bootstrap JS (for tooltip) -->
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="controller/giohang.js"></script>
+    <script src="controller/sanphamdamua.js"></script>
+    <script src="route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+
+    <!-- JavaScript cho tooltip -->
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    
+    });
+    </script>
+    
+</body>
+</html>

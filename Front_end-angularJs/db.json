@@ -1,0 +1,55 @@
+{
+  "user": [
+    {
+      "id": "2",
+      "hoTen": "Nguyễn Thị P",
+      "email": "thiP123@gmail.com",
+      "vaiTro": "admin",
+      "password": "admin123"
+    },
+    {
+      "id": "3",
+      "hoTen": "Lê Văn T",
+      "email": "vant001@gmail.com",
+      "vaiTro": "nhân viên",
+      "password": "nhanvien123"
+    },
+    {
+      "id": "e97a",
+      "hoTen": "Nguyễn Văn K",
+      "email": "vanK115@gmail.com",
+      "vaiTro": "nhân viên",
+      "password": "nhanvien123"
+    }
+  ],
+  "sanpham": [
+    {
+      "id": "1",
+      "name": "sản phẩm 1",
+      "gia": "1234",
+      "moTa": "sản phẩm số 1 thị trường"
+    },
+    {
+      "id": "2",
+      "name": "sản phẩm 2",
+      "gia": "4587555",
+      "moTa": "sản phẩm số 1 thị trường"
+    },
+    {
+      "id": "7805",
+      "name": "sản phẩm 3",
+      "gia": "1111",
+      "moTa": "sản phẩm đẹp"
+    }
+  ],
+  "vaiTro": [
+    {
+      "id": "1",
+      "name": "nhân Viên"
+    },
+    {
+      "id": "2",
+      "name": "admin"
+    }
+  ]
+}

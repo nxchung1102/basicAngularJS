@@ -1,0 +1,85 @@
+<div class="p-4" style="min-height: 800px;">         
+    <h4 class="text-primary mb-4">Quản lý người dùng</h4>
+    
+            <input type="hidden" class="form-control" ng-model="data.id">
+
+            <div class="mb-3">
+                <label class="form-label">Họ Tên</label>
+                <input type="text" class="form-control" ng-model="data.hoTen" ng-keyup="validatehoTen()">
+                <span ng-show="validate.hoTen" class="text-danger" >Không để trống</span>
+                
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control" ng-model="data.email" ng-keyup="validateemail()">
+                <span ng-show="validate.email" class="text-danger" >Không để trống</span>
+            
+        
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Vai trò</label>
+                <select ng-model="data.vaiTro" class="form-control" >
+                    <option value="" hidden>--Chọn vai trò</option>
+                    <option value="{{value.name}}" ng-repeat="value in listvaiTro" >
+                        {{value.name}}
+                        
+                    </option>
+                </select>
+                <!-- <input type="text" class="form-control" ng-model="data.vaiTro"  ng-keyup="validatevaiTro()"> -->
+                <span ng-show="validate.vaiTro" class="text-danger" >Không để trống</span>
+               
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="text" class="form-control" ng-model="data.password"   ng-keyup="validatepassword()">
+                <span ng-show="validate.password" class="text-danger" >Không để trống</span>
+               
+            </div>
+        </form>
+    
+    <button class="btn btn-info" ng-click="save()">Thêm mới</button>
+    <br>
+    <br>
+    <div>
+        <h6>Search</h6>
+                 <form  style="width: 18rem;">
+                     <div class="mt-2">
+                         <input type="text" class="form-control" placeholder="Search Name" ng-model="hoTen">
+                     </div>
+                 </form>
+             <form>
+             </div>
+             <br>
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th scope="col" ng-click="sortColumn('id')" >Id</th>
+                <th scope="col" ng-click="sortColumn('hoTen')">Họ tên</th>
+                <th scope="col" ng-click="sortColumn('email')">Email</th>
+                <th scope="col" ng-click="sortColumn('vaiTro')">Vai trò</th>
+                <th scope="col" ng-click="sortColumn('password')">Password</th>
+                <th scope="col" >Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="(key ,value)  in lstPost 
+            | orderBy:columnName:revert
+            | filter:{
+                hoTen: hoTen,
+               
+                }
+            " >
+                <td>{{value.id}}</td>
+                <td>{{value.hoTen}}</td>
+                <td>{{value.email}}</td>
+                <td>{{value.vaiTro}}</td>
+                <td>{{value.password}}</td>
+                <td>
+                    <button class="btn btn-success" ng-click="update(value)">Sửa</button>
+                    <button class="btn btn-danger" ng-click="delete(value.id)">Xoá</button>
+                </td>
+            </tr>
+           
+        </tbody>
+    </table>
+</div>

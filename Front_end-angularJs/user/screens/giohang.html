@@ -1,0 +1,29 @@
+<div ng-controller="giohang" class="container">
+  <h3 class="text-danger"><i class="fa-solid fa-cart-shopping"></i>GIỎ HÀNG CỦA BẠN️</h3>
+  <section class="d-flex row" ng-repeat="sp in sanphams" style="margin-bottom: 20px; border: 3px solid #cb0f0f;">
+    <section class="col-lg-4 col-md-4 mb-3">
+      <div style="display: flex; align-items: center;">
+        <img src="img/{{ sp.img }}" alt="" width="100px"
+          style="display: inline-block; vertical-align: middle; margin-right: 10px;">
+        <div style="display: inline-block; vertical-align: middle;">
+          <p class="" style="margin: 0;">{{ sp.name }}</p>
+          <p class="text-danger" style="margin: 0;">{{ sp.price }}$</p>
+        </div>
+      </div>
+    </section>
+    <section class="col-lg-4 col-md-4 mb-3" style="display: flex; align-items: center;">
+      <div>
+        <p style="margin: 0;">Số lượng:</p> <input type="number" ng-model="sp.soluong" min="1">
+        <p class="text-danger">Tổng tiền: {{ sp.soluong * sp.price }}$</p>
+      </div>
+    </section>
+    <section class="col-lg-4 col-md-4 mb-3" style="display: flex; align-items: center;">
+      <span style="white-space: nowrap;">
+        <div class="button-container">
+          <button class="btn btn-success ">Mua ngay</button>
+          <button class="btn btn-danger">Xoá</button>
+        </div>
+      </span>
+    </section>
+  </section>
+</div>

@@ -1,0 +1,146 @@
+    <style>
+.tab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid #ffc107;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-check {
+    text-align: left;
+}
+
+.btn {
+    width: 100%;
+}
+
+.form-lable {
+    margin-bottom: 15px;
+}
+
+.form-lable label {
+    font-weight: bold;
+}
+
+.form-lable input[type="text"],
+.form-lable input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.form-lable button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tab-pane .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ffc107;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.tab-pane .form-lable label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.tab-pane .form-lable small {
+    color: red;
+    display: none;
+}
+
+
+
+
+
+    </style>
+    <div class="col-md-12 offset-md-1 container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist" style="background-color: lightcyan;" >
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Login</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Sign up</button>
+            </li>
+        </ul>
+        <div class="tab-content p-4" id="myTabContent" style="background-image: url('https://kenh14cdn.com/thumb_w/660/203336854389633024/2023/12/29/4143690756888236167067604789204028988713404n-1703852258488232395937.jpg');">
+            <div class="login-container tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <h2 class="text-center " style="color: red;">Login</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email :</label><br>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword6" class="form-label">Password :</label>
+                        <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                        <span id="passwordHelpInline" class="form-text">
+                            Must be 8-20 characters long.
+                        </span>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container">
+                    <form id="form" class="form">
+                      <h2 style="color: red; text-align: center;" >Sign up</h2>
+                      <div class="form-lable">
+                        <div class="row">
+                          <div class="col">
+                            <label for="username">Tên</label>
+                            <input type="text" id="username" class="form-lable" placeholder="Nhập tên">
+                            <small>Error message</small>
+                          </div>
+                          <div class="col">
+                            <label for="sdt">Số Điện Thoại</label>
+                            <input type="text" id="sdt" class="form-lable" placeholder="Nhập số điện thoại">
+                            <small>Error message</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-lable">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" class="form-lable" placeholder="Nhập email">
+                        <small>Error message</small>
+                      </div>
+                      <div class="form-lable">
+                        <label for="password">Mật Khẩu</label>
+                        <input type="password" id="password" class="form-lable" placeholder="Nhập mật khẩu">
+                        <small>Error message</small>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Sign up</button>
+                    </form>
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+

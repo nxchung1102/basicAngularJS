@@ -1,0 +1,928 @@
+<style>
+    .small-btn {
+        font-size: 10px;
+
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+</style>
+
+<div ng-controller="sanpham" class="container">
+    <div class=" container mb-3" style="background-color:white; height:2000px; ">
+        <div class="products col-lg-12 col-md-12 mt-3 ">
+            <h3 class="text-primary"><i class="fa-solid fa-clipboard"></i> Trang 2</h3>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item ">
+                        <a href="#!/trangchu" class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item"><a href="#!/trangchu" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#!/sanpham" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#!/sanpham" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#!/trang4" class="page-link">...</a></li>
+                    <li class="page-item"><a href="#!/trang9" class="page-link">9</a></li>
+                    <li class="page-item"><a href="#!/trang10" class="page-link">10</a></li>
+                    <li class="page-item">
+                        <a class="page-link">Next</a>
+                    </li>
+                </ul>
+              </nav>
+            <section class=" row">
+                <section class="col-lg-2 col-md-2 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP1.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày Snacker</h5></a>
+
+                            <p class="text-danger text-center">1050$</p>
+                            <p class="text-center">Đã bán 1,2k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet2" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP17.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày MLB</h5></a>
+                            <p class="text-danger text-center">1050$</p>
+                            <p class="text-center">Đã bán 1,2k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet3" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP18.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày LV</h5></a>
+
+                            <p class="text-danger text-center">2150$</p>
+                            <p class="text-center">Đã bán 1,8k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet1" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP19.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày Jordan </h5></a>
+                            <p class="text-danger text-center">450$</p>
+                            <p class="text-center">Đã bán 214</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet2" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP17.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày MLB </h5></a>
+                            <p class="text-danger text-center">1350$</p>
+                            <p class="text-center">Đã bán 893</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet3" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP18.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày LV </h5></a>
+                            <p class="text-danger text-center">1350$</p>
+                            <p class="text-center">Đã bán 893</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class=" row">
+                <section class="col-lg-2 col-md-2 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP1.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày Snacker</h5></a>
+
+                            <p class="text-danger text-center">1050$</p>
+                            <p class="text-center">Đã bán 1,2k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet2" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP17.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày MLB</h5></a>
+                            <p class="text-danger text-center">1050$</p>
+                            <p class="text-center">Đã bán 1,2k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet3" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP18.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày LV</h5></a>
+
+                            <p class="text-danger text-center">2150$</p>
+                            <p class="text-center">Đã bán 1,8k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet1" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP19.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày Jordan </h5></a>
+                            <p class="text-danger text-center">450$</p>
+                            <p class="text-center">Đã bán 214</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet2" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP17.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày MLB </h5></a>
+                            <p class="text-danger text-center">1350$</p>
+                            <p class="text-center">Đã bán 893</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet3" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP18.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày LV </h5></a>
+                            <p class="text-danger text-center">1350$</p>
+                            <p class="text-center">Đã bán 893</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class=" row">
+                <section class="col-lg-2 col-md-2 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP1.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày Snacker</h5></a>
+
+                            <p class="text-danger text-center">1050$</p>
+                            <p class="text-center">Đã bán 1,2k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet2" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP17.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày MLB</h5></a>
+                            <p class="text-danger text-center">1050$</p>
+                            <p class="text-center">Đã bán 1,2k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet3" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP18.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày LV</h5></a>
+
+                            <p class="text-danger text-center">2150$</p>
+                            <p class="text-center">Đã bán 1,8k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet1" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP19.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày Jordan </h5></a>
+                            <p class="text-danger text-center">450$</p>
+                            <p class="text-center">Đã bán 214</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet2" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP17.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày MLB </h5></a>
+                            <p class="text-danger text-center">1350$</p>
+                            <p class="text-center">Đã bán 893</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet3" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP18.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày LV </h5></a>
+                            <p class="text-danger text-center">1350$</p>
+                            <p class="text-center">Đã bán 893</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class=" row">
+                <section class="col-lg-2 col-md-2 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP1.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày Snacker</h5></a>
+
+                            <p class="text-danger text-center">1050$</p>
+                            <p class="text-center">Đã bán 1,2k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet2" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP17.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày MLB</h5></a>
+                            <p class="text-danger text-center">1050$</p>
+                            <p class="text-center">Đã bán 1,2k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet3" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP18.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày LV</h5></a>
+
+                            <p class="text-danger text-center">2150$</p>
+                            <p class="text-center">Đã bán 1,8k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet1" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP19.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày Jordan </h5></a>
+                            <p class="text-danger text-center">450$</p>
+                            <p class="text-center">Đã bán 214</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet2" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP17.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày MLB </h5></a>
+                            <p class="text-danger text-center">1350$</p>
+                            <p class="text-center">Đã bán 893</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet3" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP18.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày LV </h5></a>
+                            <p class="text-danger text-center">1350$</p>
+                            <p class="text-center">Đã bán 893</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class=" row">
+                <section class="col-lg-2 col-md-2 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP1.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày Snacker</h5></a>
+
+                            <p class="text-danger text-center">1050$</p>
+                            <p class="text-center">Đã bán 1,2k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet2" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP17.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày MLB</h5></a>
+                            <p class="text-danger text-center">1050$</p>
+                            <p class="text-center">Đã bán 1,2k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet3" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP18.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày LV</h5></a>
+
+                            <p class="text-danger text-center">2150$</p>
+                            <p class="text-center">Đã bán 1,8k</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet1" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP19.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày Jordan </h5></a>
+                            <p class="text-danger text-center">450$</p>
+                            <p class="text-center">Đã bán 214</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet2" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP17.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày MLB </h5></a>
+                            <p class="text-danger text-center">1350$</p>
+                            <p class="text-center">Đã bán 893</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-2 col-md-2 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="#!/chitiet3" style="text-decoration: none; color: black; text-align: center;">
+                                <img src="img/SP18.jpg" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">Giày LV </h5></a>
+                            <p class="text-danger text-center">1350$</p>
+                            <p class="text-center">Đã bán 893</p>
+                            <div class="button-container">
+                                <div>
+                                    <button type="button" class="btn btn-danger small-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Mua hàng
+                                    </button>
+                                </div>
+                                <div style="margin-left: 3px;">
+                                    <button class="btn btn-success small-btn" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+
+
+        </div>
+
+
+
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+            <li class="page-item ">
+                <a href="#!/trangchu" class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a href="#!/trangchu" class="page-link">1</a></li>
+            <li class="page-item"><a href="#!/sanpham" class="page-link">2</a></li>
+            <li class="page-item"><a href="#!/sanpham" class="page-link">3</a></li>
+            <li class="page-item"><a href="#!/trang4" class="page-link">...</a></li>
+            <li class="page-item"><a href="#!/trang9" class="page-link">9</a></li>
+            <li class="page-item"><a href="#!/trang10" class="page-link">10</a></li>
+            <li class="page-item">
+                <a class="page-link">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fs-5" id="exampleModalLabel">Thông báo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Chúc mừng bạn đã mua hàng thành công
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fs-5" id="exampleModalLabel">Thông báo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Thêm vào giỏ hàng thành công
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My shoes admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<!-- xuống dòng alt + Z -->
+
+<body ng-app="myApp">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 ">
+                <div ng-include="'layouts/_header.html'"></div>
+                <div ng-view class="container"></div>
+                <div ng-include="'layouts/_footer.html'"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="controller/NguoiDungController.js"></script>
+    <script src="controller/SanPhamController.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="../../lib/angular-route.min.js"></script>
+
+    <script>
+
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/nguoi-dung", {
+                    templateUrl: "view/nguoidung.html",
+                    controller : NguoiDungController
+                })
+                .when("/san-pham", {
+                    templateUrl: "view/sanpham.html",
+                    controller : SanPhamController
+                })
+                
+                .when("/", {
+                    templateUrl: "view/trangchu.html"
+                })
+                .otherwise({
+                    template: "<h1>Lỗi 404</h1><p>Trang không tồn tại</p>"
+
+
+
+                });
+        });
+        app.filter("aboutGia",function(){
+    return function(input , min , max){
+        let output=[]
+        if(min != null & max != null){
+            input.forEach(function(item){
+                if(item.gia > Number(min) && item.gia < Number(max)){
+                    output.push(item)
+                }
+            })
+            return output
+        }
+        else{
+        return input
+        }
+    }
+})
+
+//     app.controller("parent",$scope =>{
+//     $scope.students=[{
+//         STT:"1",
+//         HoTen: "Nguyễn Văn A",
+//         Email: "abc@gmail.com",
+//         VaiTro: "Admin"
+
+//     },
+//     {
+//         STT:"2",
+//         HoTen: "Nguyễn Văn B",
+//         Email: "abc@gmail.com",
+//         VaiTro: "Admin"
+
+//     },
+//     {
+//         STT:"3",
+//         HoTen: "Nguyễn Văn C",
+//         Email: "abc@gmail.com",
+//         VaiTro: "Admin"
+
+//     }
+
+// ]
+// $scope.student ={
+//     STT:"",
+//         HoTen: "",
+//         Email: "",
+//         VaiTro: ""
+// }
+// $scope.indexUpdate = undefined
+
+// })
+// app.controller("form",$scope =>{
+    
+//     $scope.save = function (){
+//         if( $scope.$parent.indexUpdate == undefined){
+//             //Thêm mới
+//          let student = angular.copy($scope.$parent.student)
+//         $scope.$parent.students.push(student)
+//         $scope.huy()
+//         }
+//         else{
+//             // Sửa
+//             let student = angular.copy($scope.$parent.student)
+//             let index = $scope.$parent.indexUpdate
+//             $scope.$parent.students.splice(index, 1, student)
+//             $scope.huy()
+//             $scope.$parent.indexUpdate = undefined
+//         }
+        
+//     }
+//     $scope.huy = function(){
+//         $scope.$parent.student ={
+//          STT:"",
+//         HoTen: "",
+//         Email: "",
+//         VaiTro: ""  
+// }
+// $scope.$parent.indexUpdate = undefined
+
+//     }
+
+//  })
+// app.controller("table",$scope =>{
+//     $scope.saveIndex = function(index){
+//         $scope.$parent.indexUpdate = index
+//         let student=angular.copy($scope.$parent.students[index])
+//         $scope.$parent.student = student
+//     }
+//     $scope.delete = function(index){
+//         let check = confirm("Bạn có muốn xoá không ? ")
+//         if(check){
+//             $scope.$parent.students.splice(index, 1)
+
+//         }
+//     }
+
+
+// })
+
+
+
+// app.controller("parent",$scope =>{
+//     $scope.sps=[{
+//         STT:"1",
+//         TenSP: "SP1",
+//         GiaSP: "2345678",
+//         MoTa: "ABC"
+
+//     },
+//     {
+//         STT:"2",
+//         TenSP: "SP2",
+//         GiaSP: "156789",
+//         MoTa: "GHF"
+
+//     },
+//     {
+//         STT:"3",
+//         TenSP: "SP3",
+//         GiaSP: "19876",
+//         MoTa: "MNL"
+
+//     },
+
+// ]
+// $scope.sp ={
+//     STT:"",
+//         TenSP: "",
+//         GiaSP: "",
+//         MoTa: ""
+// }
+// $scope.indexUpdate = undefined
+
+// })
+// app.controller("form",$scope =>{
+    
+//     $scope.them = function (){
+//         if( $scope.$parent.indexUpdate == undefined){
+//             //Thêm mới
+//             let sp = angular.copy($scope.$parent.sp)
+//         $scope.$parent.sps.push(sp)
+//         $scope.cancel()
+//         }
+//         else{
+//             // Sửa
+//             let sp = angular.copy($scope.$parent.sp)
+//             let index = $scope.$parent.indexUpdate
+//             $scope.$parent.sps.splice(index, 1, sp)
+//             $scope.cancel()
+//             $scope.$parent.indexUpdate = undefined
+//         }
+        
+//     }
+//     $scope.cancel = function(){
+//         $scope.$parent.sp ={
+//             STT:"",
+//         TenSP: "",
+//         GiaSP: "",
+//         MoTa: ""
+// }
+// $scope.$parent.indexUpdate = undefined
+
+//     }
+
+//  })
+// app.controller("table",$scope =>{
+//     $scope.themIndex1 = function(index){
+//         $scope.$parent.indexUpdate = index
+//         let sp=angular.copy($scope.$parent.sps[index])
+//         $scope.$parent.sp = sp
+//     }
+//     $scope.delete = function(index){
+//         let check = confirm("Bạn có muốn xoá không ? ")
+//         if(check){
+//             $scope.$parent.sps.splice(index, 1)
+
+//         }
+//     }
+
+
+// })
+
+    </script>
+
+</body>
+
+</html>

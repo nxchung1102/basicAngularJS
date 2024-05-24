@@ -1,0 +1,28 @@
+.slider-custom{
+    height: 300px;
+}
+.slider-custom img{
+    object-fit: cover;
+}
+
+footer{
+    background-color: dodgerblue;
+    color: white;
+}
+.nav{
+    background-color: dodgerblue;
+    color: white;
+    height: 90px;
+    
+}
+.nav-item{
+    margin-top: 10px;
+}
+.justify-content-left{
+    margin-top: 1px;
+}
+.small-button {
+    width: 85px; 
+    font-size: 8px;
+   text-align: center;
+}
